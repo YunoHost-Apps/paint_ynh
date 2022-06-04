@@ -46,11 +46,6 @@ This project demonstrates the use of:
 **Shipped version:** 1.0~ynh1
 
 **Demo:** https://paint.js.org/
-
-## Screenshots
-
-![Screenshot of Paint](./doc/screenshots/example.jpg)
-
 ## Disclaimers / important information
 
 
