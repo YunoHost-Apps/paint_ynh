@@ -1,7 +1,6 @@
-SOURCE_URL=url of app's source
-SOURCE_SUM=sha256 checksum
+SOURCE_URL=https://github.com/christianliebel/paint/archive/refs/heads/main.zip
+SOURCE_SUM=0e0249f7e409e91a16211d7ed9e862075e87954752b7b19f3f5f1ed0e1d29edf
 SOURCE_SUM_PRG=sha256sum
-SOURCE_FORMAT=tar.gz
+SOURCE_FORMAT=zip
 SOURCE_IN_SUBDIR=true
-SOURCE_FILENAME=
 SOURCE_EXTRACT=true
