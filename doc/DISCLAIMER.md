@@ -1,12 +1,7 @@
-* Any known limitations, constrains or stuff not working, such as (but not limited to):
-    * requiring a full dedicated domain ?
-    * architectures not supported ?
-    * not-working single-sign on or LDAP integration ?
-    * the app requires an important amount of RAM / disk / .. to install or to work properly
-    * etc...
 
-* Other infos that people should be aware of, such as:
-    * any specific step to perform after installing (such as manually finishing the install, specific admin credentials, ...)
-    * how to configure / administrate the application if it ain't obvious
-    * upgrade process / specificities / things to be aware of ?
-    * security considerations ?
+This project aims to demonstrate modern web capabilities and Web Component-based application architectures on the example of a productivity app dinosaur: Paint.
+All offline-capable and installable, just as [Progressive Web Apps](https://web.dev/progressive-web-apps/) should be.
+
+## PLEASE NOTE
+
+This project is in an early state. Not all tools and actions are implemented right now. Your help and feedback are wanted!
