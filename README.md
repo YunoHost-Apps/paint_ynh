@@ -15,15 +15,39 @@ If you don't have YunoHost, please consult [the guide](https://yunohost.org/#/in
 
 ## Overview
 
-Some long and extensive description of what the app is and does, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+# Paint: An open-source, Web Components-based remake of MS Paint using modern web capabilities
 
-### Features
+Paint is back—right in your browser! Try it on [paint.js.org](https://paint.js.org).
 
-- Ut enim ad minim veniam, quis nostrud exercitation ullamco ;
-- Laboris nisi ut aliquip ex ea commodo consequat ;
-- Duis aute irure dolor in reprehenderit in voluptate ;
-- Velit esse cillum dolore eu fugiat nulla pariatur ;
-- Excepteur sint occaecat cupidatat non proident, sunt in culpa."
+This project aims to demonstrate modern web capabilities and Web Component-based application architectures on the example of a productivity app dinosaur: Paint.
+All offline-capable and installable, just as [Progressive Web Apps](https://web.dev/progressive-web-apps/) should be.
+
+## PLEASE NOTE
+
+This project is in an early state. Not all tools and actions are implemented right now. Your help and feedback are wanted!
+
+## Modern Web Technology
+
+This project demonstrates the use of:
+
+- [Web Components](https://www.webcomponents.org/introduction), the native component model of the web (via [Lit](https://lit.dev/))
+- [Service Workers](https://developers.google.com/web/fundamentals/primers/service-workers) for offline capability (via [Workbox](https://developers.google.com/web/tools/workbox))
+- [Web App Manifest](https://github.com/w3c/manifest) for installability
+- [File System Access API](https://web.dev/file-system-access/) for file system access (via [browser-fs-access](https://github.com/GoogleChromeLabs/browser-fs-access)), including drag and drop
+- [File Handling API](https://web.dev/file-handling/) for registering as a handler for \*.png files
+- [Async Clipboard API](https://web.dev/image-support-for-async-clipboard/) for clipboard access
+- [Web Share API](https://web.dev/web-share/#sharing-files) for sharing images to other applications via _File > Send…_
+- [StorageManager API](https://web.dev/storage-for-the-web/#check) for estimating storage usage in _Help > About Paint_
+- [prefers-color-scheme](https://web.dev/prefers-color-scheme/) for dark mode
+- [Local Font Access API](https://web.dev/local-fonts/) for accessing local fonts
+- [Snowpack](https://www.snowpack.dev/), a lightning-fast frontend build tool
+
+## Goals
+
+- This implementation tries to stick as closely as possible to the original Paint for Windows 95—not more, but also not less. You might want to check out [Felix Rieseberg’s windows95 to run the original Paint](https://github.com/felixrieseberg/windows95).
+- This implementation should stay smaller (= transferred bytes) than Paint’s executable size of 340K.
+- Everything must be achieved with native web technology only, so no Cordova or Electron builds. Features that are not exposed to the web must be disabled in the menu.
+- Where modern web APIs are used, they should be [progressively enhanced](https://web.dev/progressively-enhance-your-pwa/).
 
 
 **Shipped version:** 1.0~ynh1
